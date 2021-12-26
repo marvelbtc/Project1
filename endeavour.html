@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUTOMOBILE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+        .spec {
+            color: #b3b3cc;
+            margin-bottom: 5px;
+            font-size: 18px;
+            font-weight: 600;
+            font-style: oblique;
+            font-family: 'Train One', cursive;
+        }
+        
+        #details {
+            color: #ccb3b9;
+            font-family: 'Syne Mono', monospace;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">AUTOMOBILE</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="models.html" class="navbar__links">Models</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="gallery.php" class=" navbar__links ">Gallery</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="./user_login/login.php" class=" navbar__links ">Forum</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main ">
+        <div class="main__container ">
+            <div class="main__content ">
+                <h1>ENDEAVOUR</h1>
+                <h2>Grab yours!</h2>
+                <button class="main__btn "><a href="book.php">For Booking</a></button>
+                <p>
+                    <ul>
+                        <div class="spec">Ex-Showroom Price: <span id="details">₹29.99 Lakhs - ₹35.45 Lakhs</span></div>
+                        <div class="spec">Fuel economy: <span id="details">12-14 km/l combined</span></div>
+                        <div class="spec">Fuel Tank Capacity: <span id="details">80 L</span></div>
+                        <div class="spec">Dimensions: <span id="details">4,903 mm L x 1,869 mm W x 1,837 mm H</span></div>
+                        <div class="spec">Engine: <span id="details">2.0 L 4-cylinder diesel</span></div>
+                        <div class="spec">Curb Weight: <span id="details">2,285 to 2,415 kg</span></div>
+                    </ul>
+                </p>
+            </div>
+            <div class="main__img--container ">
+                <img id="main__img " src="images/model/endeavour1.png " />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <div class="footer__container ">
+        <div class="footer__links ">
+            <div class="footer__link--wrapper ">
+                <div class="footer__link--items ">
+                    <h2>Contact Us</h2>
+                    <a href="/ ">Contact</a> <a href="/ ">Support</a>
+                    <a href="/ ">Destinations</a> <a href="/ ">Sponsorships</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper ">
+                <div class="footer__link--items ">
+                    <h2>Social Media</h2>
+                    <a href="/ ">Instagram</a> <a href="/ ">Facebook</a>
+                    <a href="/ ">Youtube</a> <a href="/ ">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="social__media ">
+            <div class="social__media--wrap ">
+                <div class="footer__logo">
+                    <a href="index.html" id="footer__logo">AUTOMOBILE</a>
+                </div>
+                <p class="website__rights ">© AUTOMOBILE 2021. All rights reserved</p>
+                <div class="social__icons ">
+                    <a class="social__icon--link " href="/ " target="_blank " aria-label="Facebook ">
+                        <i class="fab fa-facebook "></i>
+                    </a>
+                    <a class="social__icon--link " href="/ " target="_blank " aria-label="Instagram ">
+                        <i class="fab fa-instagram "></i>
+                    </a>
+                    <a class="social__icon--link " href="/ " target="_blank " aria-label="Youtube ">
+                        <i class="fab fa-youtube "></i>
+                    </a>
+                    <a class="social__icon--link " href="/ " target="_blank " aria-label="Twitter ">
+                        <i class="fab fa-twitter "></i>
+                    </a>
+                    <a class="social__icon--link " href="/ " target="_blank " aria-label="LinkedIn ">
+                        <i class="fab fa-linkedin "></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/app.js "></script>
+</body>
+
+</html>

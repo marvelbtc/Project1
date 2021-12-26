@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Staatliches');
+
+:root {
+  --primary-color: #c72727;
+  --secondary-color: #f99500;
+  --light-color: #f3f3f3;
+  --lighter-color: white;
+  --dark-color: #333;
+  --max-width: 1200px;
+}
+
+.category {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--light-color);
+  font-family: "Lato", sans-serif;
+  line-height: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 ,h2 ,h3 ,h4 ,h5{
+  font-family: "Staatliches", cursive;
+  margin-bottom: 1rem;
+  line-height: 1.3rem;
+}
+
+/* Utilities */
+.card {
+  padding: 1rem;
+  background: var(--lighter-color);
+}
+
+.bg-light {
+  background: var(--lighter-color);
+  color: var(--dark-color);
+}
+.bg-dark {
+  background: var(--dark-color);
+  color: var(--lighter-color);
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+.list li {
+  border-bottom: 1px solid #444;
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+  opacity: 0.94;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.category {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 0.9rem;
+}
+
+.category-sports {
+  background: var(--sports-color);
+  color: var(--light-color);
+}
+ .category-ent {
+  background: var(--ent-color);
+  color: var(--light-color);
+}
+ .category-tech {
+  background: var(--tech-color);
+  color: var(--light-color);
+}
+
+/* Navbar */
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#navbar .container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+#navbar .logo {
+  width: 180px;
+}
+
+#navbar ul {
+  justify-self: end;
+  display: flex;
+}
+
+#navbar ul li a {
+  padding: 0.75rem; 
+  color: #333;
+}
+
+#navbar ul li a.current {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+#navbar ul li a:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+#navbar .social i {
+  margin-left: 0.75rem;
+  color: #333;
+}
+
+/* Showcase */
+#showcase {
+  background: #333;
+  color: #fff;
+  position: relative;
+}
+
+#showcase::before{
+  content: "";
+  background: url(../images/featured.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+}
+
+#showcase .btn {
+  color: var(--light-color);
+}
+
+/* Home Articles */
+#home-articles .home-articles-container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+}
+
+#home-articles .home-articles-container > *:first-child,
+#home-articles .home-articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.75rem;
+  grid-column: 1 / span 2;
+  align-items: center;
+}
+
+#home-articles .home-articles-container > *:last-child {
+  grid-column: 2 / span 2; 
+}
+
+/* Footer */
+#jesus .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 1.5rem;
+  margin: 0 1.5rem;
+}
+
+#jesus .footer-container img {
+  width: 180px;
+}
+
+#jesus .footer-container > *:last-child {
+  background: #444;
+  text-align: center;
+  grid-column: 1 / span 4;
+}
+
+#jesus .footer-container input[type="text"] {
+  padding: 0.5rem;
+  width: 90%;
+  margin-bottom: 0.5rem;
+}
+
+#jesus .footer-container #dumb-p {
+  margin-bottom: 0.5rem;
+}
+
+#jesus .footer-container input[type="submit"] {
+  width: 90%;
+  border: none;
+  color: #fff;
+}
+
+.list li a:hover {
+  color: var(--primary-color);
+}
+
+@media(max-height:568px) {
+  #showcase .showcase-container {
+    height: 100vh;
+  }
+}
